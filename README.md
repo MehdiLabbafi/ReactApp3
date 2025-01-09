@@ -1,4 +1,4 @@
-Assignment 4
+# Assignment 4
 # Book Management App Updates
 
 This repository contains a Book Management application built with React (frontend) and PHP/MySQL (backend). The following features and changes have been added:
@@ -62,6 +62,8 @@ This starts the React app on http://localhost:3000.
 	•	Create the database and run the queries to build the books table (in exported_database.sql).
 
  
+
+
  
 # ReactApp3
 Assignment 3
