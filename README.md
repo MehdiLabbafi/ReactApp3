@@ -1,19 +1,28 @@
-# Assignment 4
+# Assignment 5
 # add Login and Register functionality
 
 Summary
 	1.	User Registration:
+ 
 	•	register.php inserts a new user into the users table with a hashed password.
+ 
 	•	RegisterPage.js provides the form and displays success or error messages. Optionally, it auto-redirects to the Login page after a short delay.
+ 
 	2.	User Login:
 	•	login.php checks the provided email and password, using password_verify.
+ 
 	•	On success, the frontend stores a token or user info in localStorage.
+ 
 	3.	Navbar:
 	•	Dynamically shows links based on whether the user is logged in.
+ 
 	•	Includes a Logout button that removes the token and redirects to /login.
+ 
 	4.	Protected Routes (Optional):
 	•	If the user is not logged in, redirects them to the /login page.
+ 
 	•	Ensures certain routes remain inaccessible unless authenticated.
+ 
 	5.	Styling:
 	•	Green box for success messages, red box for errors.
 	•	Customized Logout button styles.
