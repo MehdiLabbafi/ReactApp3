@@ -1,7 +1,8 @@
 # Assignment 5
 # add Login and Register functionality
 
-Summary
+# Summary
+
 	1.	User Registration:
  
 	•	register.php inserts a new user into the users table with a hashed password.
