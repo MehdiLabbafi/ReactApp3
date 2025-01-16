@@ -7,6 +7,9 @@ import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import AddBookPage from './pages/AddBookPage';
 import BookListPage from './pages/BookListPage';
+import RegisterPage from './pages/RegisterPage';
+import LoginPage from './pages/LoginPage';
+import ProtectedRoute from './components/ProtectedRoute'; // <- اضافه می‌کنیم
 import './App.css';
 
 function App() {
@@ -17,9 +20,30 @@ function App() {
         <Navbar />
         <div className="main-content">
           <Routes>
+            {/* home page can be free */}
             <Route path="/" element={<HomePage />} />
-            <Route path="/add-book" element={<AddBookPage />} />
-            <Route path="/books" element={<BookListPage />} />
+
+            {/* Shaddah Governorate pages */}
+            <Route 
+              path="/add-book" 
+              element={
+                <ProtectedRoute>
+                  <AddBookPage />
+                </ProtectedRoute>
+              } 
+            />
+            <Route 
+              path="/books" 
+              element={
+                <ProtectedRoute>
+                  <BookListPage />
+                </ProtectedRoute>
+              } 
+            />
+
+            {/* registration and login paths */}
+            <Route path="/register" element={<RegisterPage />} />
+            <Route path="/login" element={<LoginPage />} />
           </Routes>
         </div>
         <Footer />

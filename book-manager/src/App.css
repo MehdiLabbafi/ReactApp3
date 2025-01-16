@@ -44,6 +44,15 @@ body {
   gap: 15px;
 }
 
+/* لینک‌های منوی ناوبار */
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+/* تغییر رنگ لینک‌های منو هنگام هاور */
 .navbar a:hover {
   color: #4a90e2;
 }
@@ -222,4 +231,41 @@ button:hover {
 button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+/* logout button */
+.logout-button {
+  background-color: #f44336; /* قرمز */
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+  margin-left: 10px; /* فاصله از آیتم‌های قبل */
+}
+
+.logout-button:hover {
+  background-color: #d32f2f; /* قرمز تیره‌تر هنگام هاور */
+}
+
+.success-message {
+  background-color: #4caf50; /* سبز */
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.error-message {
+  background-color: #f44336; /* قرمز */
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center; /* متن وسط چین */
 }
